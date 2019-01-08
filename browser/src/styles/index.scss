@@ -1,0 +1,26 @@
+//ant design css
+@import "~antd/dist/antd.css";
+@import "~antd/dist/antd.min.css";
+
+//import colors
+@import "./common/colors";
+
+//import base css
+@import "./base/base";
+
+//components
+@import "../components/Button/style";
+@import "../containers/Login/style.scss";
+@import "../containers/Signup/style.scss";
+@import "../containers/Home/style";
+@import "../containers/Profile/style";
+
+:global(.hoverable:hover) {
+  cursor: pointer;
+}
+
+div, p, span, tr, td, h1, h2, h3, h4, h5, h6, li, ul, ol {
+  font-family: sans !important;
+}
+
+

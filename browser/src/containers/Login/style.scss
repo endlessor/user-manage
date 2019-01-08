@@ -1,0 +1,124 @@
+.plain-container {
+    width: 100%;
+    height: 100vh;
+    background: $blue-2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .userForm-content {
+    position: relative;
+    background: $white;
+    box-shadow: 0 30px 100px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    border-top-left-radius: 52px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+  
+    .form-title {
+      margin: -75px 0 25px -180px;
+      font-weight: bold
+    }
+  
+    input {
+      width: 100%;
+      border: 1px solid #d9d9d9;
+      border-radius: 4px;
+    }
+  
+    &::before {
+      content: "";
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background-color: $white;
+      color: $white;
+      position: absolute;
+      top: -32px;
+      left: 0;
+    }
+  
+    p.error {
+      color: $red !important;
+      margin-top: 2px;
+    }
+  
+    .circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: -32px;
+      width: 140px;
+      height: 140px;
+      left: 0;
+  
+      & > i {
+        font-size: 40px;
+        color: $blue-3;
+      }
+    }
+  
+    .close-icon {
+      position: absolute;
+      right: 30px;
+      top: 30px;
+  
+      & > i {
+        font-size: 24px;
+        color: $blue-3;
+      }
+    }
+  
+    .confirm {
+      margin: 110px 55px 53px 55px;
+      font-family: sans;
+  
+      & > p:first-child {
+        & > p:first-child {
+          position: absolute;
+          left: 125px;
+          top: 30px;
+          margin-right: 60px;
+  
+          font-size: 24px;
+          font-weight: bold;
+          color: $blue-1;
+          line-height: 29px;
+        }
+      }
+    }
+  }
+  
+  .login-form {
+    position: relative;
+    width: 400px;
+    .forgot-password {
+      text-align: right;
+      position: absolute;
+      top: 162px;
+      right: 0;
+      font-style: italic;
+      a {
+        color: $gray-3;
+      }
+    }
+    .form-subscribe {
+        font-size: 16px;
+        margin-left: -20px;
+        margin-bottom: 10px;
+    }
+    .btn-group {
+      display: flex;
+      & > .button-container:nth-child(2) {
+        margin-left: 16px;
+      }
+    }
+    .login-back {
+      width: 100%;
+      margin-left: 150px;
+    }
+  }
+  

@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+body {
+  margin: 0;
+  position: relative;
+  -webkit-tap-highlight-color: $white;
+}
+
+button {
+  cursor: pointer;
+}
+
+p {
+  margin: 0;
+}

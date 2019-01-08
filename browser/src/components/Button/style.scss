@@ -1,0 +1,21 @@
+.button-container {
+
+  button {
+    min-width: 160px;
+    height: 44px;
+    border-color: $blue-3;
+    border-radius: 25px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.primary {
+      background-color: $blue-3;
+    }
+
+    &.others {
+      background-color: $yellow-1;
+    }
+  }
+}
